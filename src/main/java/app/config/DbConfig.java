@@ -7,9 +7,9 @@ public class DbConfig extends AbstractDBConfig {
 
     public void init(AppContext context) {
 
-        environment("development").jdbc("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/db_name_development", "root", "");
+        environment("development").jdbc("org.postgresql.Driver", "jdbc:postgres://mgfkasvd:C4XOgRFCkSEk_R7MJTMCzAPwbsrA4yQ5@stampy.db.elephantsql.com:5432/mgfkasvd",  "mgfkasvd", "mgfkasvd");
         
-        environment("development").testing().jdbc("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/db_name_test", "root", "");
+        environment("development").testing().jdbc("org.postgresql.Driver", "jdbc:postgres://mgfkasvd:C4XOgRFCkSEk_R7MJTMCzAPwbsrA4yQ5@stampy.db.elephantsql.com:5432/mgfkasvd",  "mgfkasvd", "mgfkasvd");
 
         environment("production").jndi("jdbc/datasource_name_production");
     }

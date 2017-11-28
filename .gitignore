@@ -3,3 +3,5 @@
 *.ipr
 target
 .idea/
+database.properties
+DbConfig.java
